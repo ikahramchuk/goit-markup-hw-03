@@ -349,9 +349,10 @@ h2 {
 .sectione-services {
   color: var(--primary-text-color);
 
-  margin: 20px 24px 4px;
+  padding: 20px 24px 4px;
 
-  padding: 0;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
 
   font-weight: 700;
   font-size: 18px;
@@ -383,9 +384,12 @@ h2 {
   font-size: 16px;
   line-height: 1.88;
 
-  margin: 0 24px 20px;
+  padding: 0 24px 20px;
+  margin-bottom: 30px;
 
-  padding: 0;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .flex-container {
   display: flex;
