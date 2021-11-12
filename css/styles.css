@@ -25,9 +25,14 @@ ul {
 h3,
 p,
 h2 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+
 }
+
+.img {
+  display: block;
+}
+
 .page-header {
 }
 
@@ -40,7 +45,7 @@ h2 {
 }
 
 .section {
-  padding-top: 94px;
+  padding: 94px 0;
 }
 
 .visually-hidden {
@@ -104,8 +109,6 @@ h2 {
   color: var(--primary-text-color);
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   text-decoration: none;
 }
@@ -142,7 +145,7 @@ h2 {
   padding: 24px 0 25px;
 }
 
-/* section чем мы занимаемся*/
+/* ------------section чем мы занимаемся -----------=*/
 .section-title {
   color: var(--primary-text-color);
 
@@ -165,14 +168,15 @@ h2 {
   margin-right: 0;
 }
 
-/* business slogan Эффективные решения */
+/* ---------- business slogan Э Ф Ф Е К Т И В Н Ы Е   Р Е Ш Е Н И Я ------------ */
 .section-business {
   background: #2f303a;
   text-align: center;
+  padding: 200px 0;
 }
 .slogan {
   color: #ffffff;
-  padding-top: 200px;
+
   margin-top: 0;
   margin-bottom: 40px;
 
@@ -201,12 +205,10 @@ h2 {
 .section-button {
   padding: 10px 32px;
 
-  margin-bottom: 200px;
-
   border-radius: 4px;
   border: 1px solid transparent;
 }
-/* -----advantage секция преимуществ----- */
+/* ----- advantage С Е К Ц И Я  П Р Е И М У Щ Е С Т В ----- */
 .visually-hidden {
   outline: 2px solid tomato;
 }
@@ -247,22 +249,29 @@ h2 {
   line-height: 1.9;
   text-align: center;
 }
-/* -----------Наша команда--------- */
+/* -----------    Н А Ш А   К О М А Н Д А  --------- */
 .accent-team {
   background-color: #f5f4fa;
 }
 .our-team {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
 .team {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0 0 30px;
+  background-color: #ffffff;
 }
 .team:nth-child(4n) {
   margin-right: 0;
 }
+.advantage-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .position {
   margin-top: 10px;
 
@@ -274,6 +283,8 @@ h2 {
 /* footer */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   text-decoration: none;
@@ -296,12 +307,7 @@ h2 {
   line-height: 1.71;
 }
 
-.accent-logo {
-  padding-top: 60px;
-}
-
 .address-contact {
-  padding-bottom: 60px;
   margin-top: 20px;
 }
 .auth .link-address {
@@ -317,11 +323,14 @@ h2 {
 .auth .link-address:focus {
   color: var(--accent-color);
 }
+.auth-address:not(:last-child) {
+  margin-bottom: 9px;
+}
 .contact {
   display: block;
 }
 
-/* button */
+/* ----------- button      К Н О П К А -------------- */
 .button {
   display: inline-block;
   padding: 6px 22px;
@@ -344,64 +353,85 @@ h2 {
   color: #ffffff;
   border-color: transparent;
 }
-/* sectione-services Портфолио*/
+/* ------------ sectione-services П О Р Т Ф О Л И О --------- */
+
+
+
+
+.section-hidden {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.hidden {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+    
+  margin-bottom: 34px;
+}
+
+
+.hidden-button:not(:last-child) {
+  margin-right: 6px;
+}
+
+
+.main-services {
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin top:  -34px;
+  margin left: -30px;
+}
+
+.flex-element {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.flex-element:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.element-services{
+    
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+
+  padding: 20px 24px;
+
+
+}
 
 .sectione-services {
   color: var(--primary-text-color);
-
-  padding: 20px 24px 4px;
-
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.hidden {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.section-hidden {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.button {
-  margin-right: 6px;
-}
-.button:nth-child(5n) {
-  margin-right: 0;
-}
-.main-services {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 34px;
-}
 
 .services {
   font-size: 16px;
   line-height: 1.88;
 
-  padding: 0 24px 20px;
-  margin-bottom: 30px;
-
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
 }
+
 .flex-container {
   display: flex;
+  
   flex-wrap: wrap;
-}
-.flex-element {
-  width: 370px;
-  margin-right: 30px;
-}
-.flex-element:nth-child(3n) {
-  margin-right: 0;
-}
-.flex-element:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
